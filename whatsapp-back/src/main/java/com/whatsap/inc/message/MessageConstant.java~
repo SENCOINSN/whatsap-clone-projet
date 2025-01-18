@@ -1,0 +1,4 @@
+package com.whatsap.inc.message;
+
+public class MessageConstant {
+}

@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: whatsapp-back
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/whatsapp-db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9093/realms/whatsapp-clone
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+application:
+  file:
+    media-output-path: /media
+
