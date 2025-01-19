@@ -1,7 +1,4 @@
 package com.whatsap.inc.user;
-
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
 import java.util.Map;
 

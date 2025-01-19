@@ -1,0 +1,4 @@
+package com.whatsap.inc.notification;
+
+public enum NotificationType {
+}
